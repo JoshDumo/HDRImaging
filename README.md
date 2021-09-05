@@ -11,15 +11,10 @@ Next the images can then be digitally processed. First the images need to be ali
 
 Next the HDRI process is performed using the Debevec algorithms to calculate the radiance map. Debevec et.al. give a radiance equation
 
-\begin{equation}
-\sum_{i=1}^{N}\sum_{j=1}^{P} \left \{ w(z_{ij} [g(z_{ij})-\ln E_{i} - \ln\Delta t_{j} ])\right \}^{2} + \lambda \sum_{Z=Z_{min+1}}^{Z=Z_{max-1}}[w(z)g''(z)]^{2} = 0 
-\end{equation}
-
-The least squares solver then looks like
-
-$ [A]_{NXP+255,256+N} \{x\}_{256+N,1} = \{b\}_{NXP}$
+![HDRI Equations](HDRImagingEqn.png)
 
 More 'visually'
 
+![HDRI Matrix](HDRImagingMatrix.png)
 
 Then to produce a more aesthetically pleasing image, Tone mapping is applied. The calculated HDR values cannot be used on devices which has limited dynamic range like our screens. Tone mapping reverses the HDRI process while preserving the features in the HDR images and present aesthetically  pleasing colors.
