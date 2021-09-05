@@ -1,5 +1,6 @@
 # HDRImaging
 We explore a computational photography technique called High Dynamic Resolution (HDR) Imaging.
+![HDRI Image](HDRImagingMain.png)
 
 ## What is HDR
 Dynamic range refers to the ability to distinguish between bright sections and dark sections in a scene. Our eyes have excellent (high) dynamic range, about 100000:1 in so called 'stops'. However commercial cameras have limitations due to pixel sizes in terms of their ability to store photon generated charge. This can be mitigated by  by taking images of the same static scene at various exposures and then merging the images, a technique called High Dynamic Range Imaging.
