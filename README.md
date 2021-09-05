@@ -11,7 +11,9 @@ Next the images can then be digitally processed. First the images need to be ali
 
 Next the HDRI process is performed using the Debevec algorithms to calculate the radiance map. Debevec et.al. give a radiance equation
 
-$\sum_{i=1}^{N}\sum_{j=1}^{P} \left \{ w(z_{ij} [g(z_{ij})-\ln E_{i} - \ln\Delta t_{j} ])\right \}^{2} + \lambda \sum_{Z=Z_{min+1}}^{Z=Z_{max-1}}[w(z)g''(z)]^{2} = 0 $
+\begin{equation}
+\sum_{i=1}^{N}\sum_{j=1}^{P} \left \{ w(z_{ij} [g(z_{ij})-\ln E_{i} - \ln\Delta t_{j} ])\right \}^{2} + \lambda \sum_{Z=Z_{min+1}}^{Z=Z_{max-1}}[w(z)g''(z)]^{2} = 0 
+\end{equation}
 
 The least squares solver then looks like
 
